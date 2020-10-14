@@ -3,18 +3,27 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		0361B4C92537651000FFEF05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0361B4C82537651000FFEF05 /* AppDelegate.swift */; };
-		0361B4CB2537651000FFEF05 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0361B4CA2537651000FFEF05 /* SceneDelegate.swift */; };
-		0361B4CD2537651000FFEF05 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0361B4CC2537651000FFEF05 /* ViewController.swift */; };
-		0361B4D02537651000FFEF05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0361B4CE2537651000FFEF05 /* Main.storyboard */; };
 		0361B4D22537651200FFEF05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0361B4D12537651200FFEF05 /* Assets.xcassets */; };
 		0361B4D52537651200FFEF05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0361B4D32537651200FFEF05 /* LaunchScreen.storyboard */; };
 		0361B4E02537651300FFEF05 /* PizzaWorldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0361B4DF2537651300FFEF05 /* PizzaWorldTests.swift */; };
 		0361B4EB2537651300FFEF05 /* PizzaWorldUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0361B4EA2537651300FFEF05 /* PizzaWorldUITests.swift */; };
+		0361B50C2537670A00FFEF05 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0361B50A2537670A00FFEF05 /* HomeViewController.swift */; };
+		0361B50D2537670A00FFEF05 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0361B50B2537670A00FFEF05 /* HomeViewController.xib */; };
+		0361B51B25376C1900FFEF05 /* SliderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0361B51925376C1900FFEF05 /* SliderCell.swift */; };
+		0361B51C25376C1900FFEF05 /* SliderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0361B51A25376C1900FFEF05 /* SliderCell.xib */; };
+		0361B52125376DF800FFEF05 /* UICollectionView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0361B52025376DF800FFEF05 /* UICollectionView+Extensions.swift */; };
+		0361B5262537704900FFEF05 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0361B5252537704900FFEF05 /* UIView+Extensions.swift */; };
+		0361B52E253777DC00FFEF05 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0361B52D253777DC00FFEF05 /* RatingView.swift */; };
+		0361B53C253785AD00FFEF05 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0361B53B253785AD00FFEF05 /* HomeViewModel.swift */; };
+		0361B54D2537978200FFEF05 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0361B54C2537978200FFEF05 /* Observable.swift */; };
+		BB1D742EEF500475BE6C1F1D /* Pods_PizzaWorldTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61FBF7E9847121E225B4775F /* Pods_PizzaWorldTests.framework */; };
+		C005A28DAA3B5FCF4B33C127 /* Pods_PizzaWorld.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08EAFF7C89BE3DA80964B8D1 /* Pods_PizzaWorld.framework */; };
+		DBB2C835F623DFC272B3A3E5 /* Pods_PizzaWorld_PizzaWorldUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E77EF33A5EC7A4C8AFA32CF4 /* Pods_PizzaWorld_PizzaWorldUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,9 +46,6 @@
 /* Begin PBXFileReference section */
 		0361B4C52537651000FFEF05 /* PizzaWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PizzaWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0361B4C82537651000FFEF05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0361B4CA2537651000FFEF05 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0361B4CC2537651000FFEF05 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0361B4CF2537651000FFEF05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0361B4D12537651200FFEF05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0361B4D42537651200FFEF05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0361B4D62537651200FFEF05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +55,24 @@
 		0361B4E62537651300FFEF05 /* PizzaWorldUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PizzaWorldUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0361B4EA2537651300FFEF05 /* PizzaWorldUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaWorldUITests.swift; sourceTree = "<group>"; };
 		0361B4EC2537651300FFEF05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0361B50A2537670A00FFEF05 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		0361B50B2537670A00FFEF05 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		0361B51925376C1900FFEF05 /* SliderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderCell.swift; sourceTree = "<group>"; };
+		0361B51A25376C1900FFEF05 /* SliderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SliderCell.xib; sourceTree = "<group>"; };
+		0361B52025376DF800FFEF05 /* UICollectionView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extensions.swift"; sourceTree = "<group>"; };
+		0361B5252537704900FFEF05 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		0361B52D253777DC00FFEF05 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
+		0361B53B253785AD00FFEF05 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		0361B54C2537978200FFEF05 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		08EAFF7C89BE3DA80964B8D1 /* Pods_PizzaWorld.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PizzaWorld.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		188CA497A2703D8B7D4DDD38 /* Pods-PizzaWorldTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PizzaWorldTests.release.xcconfig"; path = "Target Support Files/Pods-PizzaWorldTests/Pods-PizzaWorldTests.release.xcconfig"; sourceTree = "<group>"; };
+		61FBF7E9847121E225B4775F /* Pods_PizzaWorldTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PizzaWorldTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		900726FB76DC10A734BB6AC7 /* Pods-PizzaWorld-PizzaWorldUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PizzaWorld-PizzaWorldUITests.release.xcconfig"; path = "Target Support Files/Pods-PizzaWorld-PizzaWorldUITests/Pods-PizzaWorld-PizzaWorldUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B5FE2855CD8B4B5EAFCD04E9 /* Pods-PizzaWorld.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PizzaWorld.release.xcconfig"; path = "Target Support Files/Pods-PizzaWorld/Pods-PizzaWorld.release.xcconfig"; sourceTree = "<group>"; };
+		E68F0694B4B6364B1A0A4DEE /* Pods-PizzaWorldTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PizzaWorldTests.debug.xcconfig"; path = "Target Support Files/Pods-PizzaWorldTests/Pods-PizzaWorldTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E70D89DEEF39F46C34CED2F9 /* Pods-PizzaWorld-PizzaWorldUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PizzaWorld-PizzaWorldUITests.debug.xcconfig"; path = "Target Support Files/Pods-PizzaWorld-PizzaWorldUITests/Pods-PizzaWorld-PizzaWorldUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E77EF33A5EC7A4C8AFA32CF4 /* Pods_PizzaWorld_PizzaWorldUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PizzaWorld_PizzaWorldUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB61B72B688678D6A0BD3C6C /* Pods-PizzaWorld.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PizzaWorld.debug.xcconfig"; path = "Target Support Files/Pods-PizzaWorld/Pods-PizzaWorld.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C005A28DAA3B5FCF4B33C127 /* Pods_PizzaWorld.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB1D742EEF500475BE6C1F1D /* Pods_PizzaWorldTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBB2C835F623DFC272B3A3E5 /* Pods_PizzaWorld_PizzaWorldUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +110,8 @@
 				0361B4DE2537651300FFEF05 /* PizzaWorldTests */,
 				0361B4E92537651300FFEF05 /* PizzaWorldUITests */,
 				0361B4C62537651000FFEF05 /* Products */,
+				E965B961E7283F9BEB79D3C0 /* Pods */,
+				F7494D3D145CCBBC2E8ECCE0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,12 +128,11 @@
 		0361B4C72537651000FFEF05 /* PizzaWorld */ = {
 			isa = PBXGroup;
 			children = (
-				0361B4C82537651000FFEF05 /* AppDelegate.swift */,
-				0361B4CA2537651000FFEF05 /* SceneDelegate.swift */,
-				0361B4CC2537651000FFEF05 /* ViewController.swift */,
-				0361B4CE2537651000FFEF05 /* Main.storyboard */,
-				0361B4D12537651200FFEF05 /* Assets.xcassets */,
-				0361B4D32537651200FFEF05 /* LaunchScreen.storyboard */,
+				0361B52A253777C300FFEF05 /* Core */,
+				0361B51525376B8700FFEF05 /* Extensions */,
+				0361B51425376B8300FFEF05 /* Utility */,
+				0361B51325376B8000FFEF05 /* Modules */,
+				0361B51225376B7B00FFEF05 /* Common */,
 				0361B4D62537651200FFEF05 /* Info.plist */,
 			);
 			path = PizzaWorld;
@@ -128,6 +156,116 @@
 			path = PizzaWorldUITests;
 			sourceTree = "<group>";
 		};
+		0361B51225376B7B00FFEF05 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				0361B4C82537651000FFEF05 /* AppDelegate.swift */,
+				0361B4D12537651200FFEF05 /* Assets.xcassets */,
+				0361B4D32537651200FFEF05 /* LaunchScreen.storyboard */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		0361B51325376B8000FFEF05 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				0361B51625376BE000FFEF05 /* Home */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		0361B51425376B8300FFEF05 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		0361B51525376B8700FFEF05 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0361B52025376DF800FFEF05 /* UICollectionView+Extensions.swift */,
+				0361B5252537704900FFEF05 /* UIView+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0361B51625376BE000FFEF05 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				0361B51825376C0A00FFEF05 /* Cells */,
+				0361B51725376BEC00FFEF05 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		0361B51725376BEC00FFEF05 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0361B50A2537670A00FFEF05 /* HomeViewController.swift */,
+				0361B54C2537978200FFEF05 /* Observable.swift */,
+				0361B53B253785AD00FFEF05 /* HomeViewModel.swift */,
+				0361B50B2537670A00FFEF05 /* HomeViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0361B51825376C0A00FFEF05 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				0361B51925376C1900FFEF05 /* SliderCell.swift */,
+				0361B51A25376C1900FFEF05 /* SliderCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		0361B52A253777C300FFEF05 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				0361B52B253777C800FFEF05 /* Views */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		0361B52B253777C800FFEF05 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0361B52C253777CD00FFEF05 /* RatingView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0361B52C253777CD00FFEF05 /* RatingView */ = {
+			isa = PBXGroup;
+			children = (
+				0361B52D253777DC00FFEF05 /* RatingView.swift */,
+			);
+			path = RatingView;
+			sourceTree = "<group>";
+		};
+		E965B961E7283F9BEB79D3C0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EB61B72B688678D6A0BD3C6C /* Pods-PizzaWorld.debug.xcconfig */,
+				B5FE2855CD8B4B5EAFCD04E9 /* Pods-PizzaWorld.release.xcconfig */,
+				E70D89DEEF39F46C34CED2F9 /* Pods-PizzaWorld-PizzaWorldUITests.debug.xcconfig */,
+				900726FB76DC10A734BB6AC7 /* Pods-PizzaWorld-PizzaWorldUITests.release.xcconfig */,
+				E68F0694B4B6364B1A0A4DEE /* Pods-PizzaWorldTests.debug.xcconfig */,
+				188CA497A2703D8B7D4DDD38 /* Pods-PizzaWorldTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F7494D3D145CCBBC2E8ECCE0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				08EAFF7C89BE3DA80964B8D1 /* Pods_PizzaWorld.framework */,
+				E77EF33A5EC7A4C8AFA32CF4 /* Pods_PizzaWorld_PizzaWorldUITests.framework */,
+				61FBF7E9847121E225B4775F /* Pods_PizzaWorldTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +273,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0361B4EF2537651300FFEF05 /* Build configuration list for PBXNativeTarget "PizzaWorld" */;
 			buildPhases = (
+				864ABA74BF41F297DDC5E9E3 /* [CP] Check Pods Manifest.lock */,
 				0361B4C12537651000FFEF05 /* Sources */,
 				0361B4C22537651000FFEF05 /* Frameworks */,
 				0361B4C32537651000FFEF05 /* Resources */,
+				3E3D8C7BFDA7F7C59B31CD28 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +292,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0361B4F22537651300FFEF05 /* Build configuration list for PBXNativeTarget "PizzaWorldTests" */;
 			buildPhases = (
+				537273D451F42ADF0115D5A2 /* [CP] Check Pods Manifest.lock */,
 				0361B4D72537651300FFEF05 /* Sources */,
 				0361B4D82537651300FFEF05 /* Frameworks */,
 				0361B4D92537651300FFEF05 /* Resources */,
@@ -170,9 +311,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0361B4F52537651300FFEF05 /* Build configuration list for PBXNativeTarget "PizzaWorldUITests" */;
 			buildPhases = (
+				15925D94E149E8C033568815 /* [CP] Check Pods Manifest.lock */,
 				0361B4E22537651300FFEF05 /* Sources */,
 				0361B4E32537651300FFEF05 /* Frameworks */,
 				0361B4E42537651300FFEF05 /* Resources */,
+				8366D49BAAAAE3C231EF5327 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -233,7 +376,8 @@
 			files = (
 				0361B4D52537651200FFEF05 /* LaunchScreen.storyboard in Resources */,
 				0361B4D22537651200FFEF05 /* Assets.xcassets in Resources */,
-				0361B4D02537651000FFEF05 /* Main.storyboard in Resources */,
+				0361B51C25376C1900FFEF05 /* SliderCell.xib in Resources */,
+				0361B50D2537670A00FFEF05 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,14 +397,122 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		15925D94E149E8C033568815 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PizzaWorld-PizzaWorldUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3E3D8C7BFDA7F7C59B31CD28 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PizzaWorld/Pods-PizzaWorld-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PizzaWorld/Pods-PizzaWorld-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PizzaWorld/Pods-PizzaWorld-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		537273D451F42ADF0115D5A2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PizzaWorldTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8366D49BAAAAE3C231EF5327 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PizzaWorld-PizzaWorldUITests/Pods-PizzaWorld-PizzaWorldUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PizzaWorld-PizzaWorldUITests/Pods-PizzaWorld-PizzaWorldUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PizzaWorld-PizzaWorldUITests/Pods-PizzaWorld-PizzaWorldUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		864ABA74BF41F297DDC5E9E3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PizzaWorld-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0361B4C12537651000FFEF05 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0361B4CD2537651000FFEF05 /* ViewController.swift in Sources */,
+				0361B54D2537978200FFEF05 /* Observable.swift in Sources */,
+				0361B52125376DF800FFEF05 /* UICollectionView+Extensions.swift in Sources */,
 				0361B4C92537651000FFEF05 /* AppDelegate.swift in Sources */,
-				0361B4CB2537651000FFEF05 /* SceneDelegate.swift in Sources */,
+				0361B53C253785AD00FFEF05 /* HomeViewModel.swift in Sources */,
+				0361B5262537704900FFEF05 /* UIView+Extensions.swift in Sources */,
+				0361B52E253777DC00FFEF05 /* RatingView.swift in Sources */,
+				0361B51B25376C1900FFEF05 /* SliderCell.swift in Sources */,
+				0361B50C2537670A00FFEF05 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,14 +548,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		0361B4CE2537651000FFEF05 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0361B4CF2537651000FFEF05 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0361B4D32537651200FFEF05 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -366,7 +610,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -421,7 +665,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -433,6 +677,7 @@
 		};
 		0361B4F02537651300FFEF05 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB61B72B688678D6A0BD3C6C /* Pods-PizzaWorld.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -452,6 +697,7 @@
 		};
 		0361B4F12537651300FFEF05 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5FE2855CD8B4B5EAFCD04E9 /* Pods-PizzaWorld.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -471,6 +717,7 @@
 		};
 		0361B4F32537651300FFEF05 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E68F0694B4B6364B1A0A4DEE /* Pods-PizzaWorldTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -493,6 +740,7 @@
 		};
 		0361B4F42537651300FFEF05 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 188CA497A2703D8B7D4DDD38 /* Pods-PizzaWorldTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -515,6 +763,7 @@
 		};
 		0361B4F62537651300FFEF05 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E70D89DEEF39F46C34CED2F9 /* Pods-PizzaWorld-PizzaWorldUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -535,6 +784,7 @@
 		};
 		0361B4F72537651300FFEF05 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 900726FB76DC10A734BB6AC7 /* Pods-PizzaWorld-PizzaWorldUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
