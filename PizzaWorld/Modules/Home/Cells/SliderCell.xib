@@ -79,16 +79,19 @@
                                         <rect key="frame" x="0.0" y="50" width="280" height="30"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="PqF-xl-GjU">
-                                                <rect key="frame" x="0.0" y="0.0" width="125" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="129" height="30"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="sMn-v5-k1S">
-                                                        <rect key="frame" x="0.0" y="0.0" width="52.5" height="30"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="54.5" height="30"/>
                                                         <subviews>
-                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="geP-2T-4Lj">
-                                                                <rect key="frame" x="0.0" y="0.0" width="11" height="30"/>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dish" translatesAutoresizingMaskIntoConstraints="NO" id="geP-2T-4Lj">
+                                                                <rect key="frame" x="0.0" y="0.0" width="13" height="30"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="13" id="x7r-wf-xqY"/>
+                                                                </constraints>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1" verticalHuggingPriority="251" text="Pizza" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mb4-aq-7SX">
-                                                                <rect key="frame" x="14" y="0.0" width="38.5" height="30"/>
+                                                                <rect key="frame" x="16" y="0.0" width="38.5" height="30"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
@@ -96,13 +99,16 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="yBB-WQ-gQZ">
-                                                        <rect key="frame" x="72.5" y="0.0" width="52.5" height="30"/>
+                                                        <rect key="frame" x="74.5" y="0.0" width="54.5" height="30"/>
                                                         <subviews>
-                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="Iua-Rs-oaZ">
-                                                                <rect key="frame" x="0.0" y="0.0" width="11" height="30"/>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="alarmClock" translatesAutoresizingMaskIntoConstraints="NO" id="Iua-Rs-oaZ">
+                                                                <rect key="frame" x="0.0" y="0.0" width="13" height="30"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="13" id="0Mt-Cc-Xqd"/>
+                                                                </constraints>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1" verticalHuggingPriority="251" text="20 mins" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lzc-Mm-cg9">
-                                                                <rect key="frame" x="14" y="0.0" width="38.5" height="30"/>
+                                                                <rect key="frame" x="16" y="0.0" width="38.5" height="30"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
@@ -175,8 +181,9 @@
         </collectionViewCell>
     </objects>
     <resources>
+        <image name="alarmClock" width="59" height="59"/>
+        <image name="dish" width="13" height="12"/>
         <image name="pizzaimage" width="323" height="322"/>
-        <image name="star" width="11" height="10"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

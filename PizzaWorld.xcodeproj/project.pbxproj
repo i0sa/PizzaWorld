@@ -21,6 +21,21 @@
 		0361B52E253777DC00FFEF05 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0361B52D253777DC00FFEF05 /* RatingView.swift */; };
 		0361B53C253785AD00FFEF05 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0361B53B253785AD00FFEF05 /* HomeViewModel.swift */; };
 		0361B54D2537978200FFEF05 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0361B54C2537978200FFEF05 /* Observable.swift */; };
+		0361B5562538B39C00FFEF05 /* PopularCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0361B5542538B39C00FFEF05 /* PopularCell.swift */; };
+		0361B5572538B39C00FFEF05 /* PopularCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0361B5552538B39C00FFEF05 /* PopularCell.xib */; };
+		0361B55C2538B7B900FFEF05 /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0361B55B2538B7B900FFEF05 /* UITableView+Extensions.swift */; };
+		0361B5622538B7FD00FFEF05 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0361B5612538B7FD00FFEF05 /* Product.swift */; };
+		0361B56E2538BB4E00FFEF05 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0361B56D2538BB4E00FFEF05 /* CustomTabBarController.swift */; };
+		0361B5762538BF4600FFEF05 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0361B5752538BF4600FFEF05 /* CustomTabBar.swift */; };
+		0361B57B2538C12D00FFEF05 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0361B57A2538C12D00FFEF05 /* UIColor+Extensions.swift */; };
+		0361B5812538C6A600FFEF05 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0361B5802538C6A600FFEF05 /* AppCoordinator.swift */; };
+		0361B58A2538C8F900FFEF05 /* MainNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0361B5892538C8F900FFEF05 /* MainNavigator.swift */; };
+		0361B5932538C90B00FFEF05 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0361B5922538C90B00FFEF05 /* Navigator.swift */; };
+		0361B59B2538CED600FFEF05 /* BaseWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0361B59A2538CED600FFEF05 /* BaseWireframe.swift */; };
+		0361B5AA2538DEB600FFEF05 /* ItemDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0361B5A82538DEB600FFEF05 /* ItemDetailsViewController.swift */; };
+		0361B5AB2538DEB600FFEF05 /* ItemDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0361B5A92538DEB600FFEF05 /* ItemDetailsViewController.xib */; };
+		0361B5B32538DECE00FFEF05 /* ItemDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0361B5B22538DECE00FFEF05 /* ItemDetailsViewModel.swift */; };
+		0361B5B92538E5DA00FFEF05 /* ProductViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0361B5B82538E5DA00FFEF05 /* ProductViewModel.swift */; };
 		BB1D742EEF500475BE6C1F1D /* Pods_PizzaWorldTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61FBF7E9847121E225B4775F /* Pods_PizzaWorldTests.framework */; };
 		C005A28DAA3B5FCF4B33C127 /* Pods_PizzaWorld.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08EAFF7C89BE3DA80964B8D1 /* Pods_PizzaWorld.framework */; };
 		DBB2C835F623DFC272B3A3E5 /* Pods_PizzaWorld_PizzaWorldUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E77EF33A5EC7A4C8AFA32CF4 /* Pods_PizzaWorld_PizzaWorldUITests.framework */; };
@@ -64,6 +79,21 @@
 		0361B52D253777DC00FFEF05 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
 		0361B53B253785AD00FFEF05 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		0361B54C2537978200FFEF05 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		0361B5542538B39C00FFEF05 /* PopularCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularCell.swift; sourceTree = "<group>"; };
+		0361B5552538B39C00FFEF05 /* PopularCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopularCell.xib; sourceTree = "<group>"; };
+		0361B55B2538B7B900FFEF05 /* UITableView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
+		0361B5612538B7FD00FFEF05 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		0361B56D2538BB4E00FFEF05 /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
+		0361B5752538BF4600FFEF05 /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
+		0361B57A2538C12D00FFEF05 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		0361B5802538C6A600FFEF05 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		0361B5892538C8F900FFEF05 /* MainNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigator.swift; sourceTree = "<group>"; };
+		0361B5922538C90B00FFEF05 /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
+		0361B59A2538CED600FFEF05 /* BaseWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseWireframe.swift; sourceTree = "<group>"; };
+		0361B5A82538DEB600FFEF05 /* ItemDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailsViewController.swift; sourceTree = "<group>"; };
+		0361B5A92538DEB600FFEF05 /* ItemDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemDetailsViewController.xib; sourceTree = "<group>"; };
+		0361B5B22538DECE00FFEF05 /* ItemDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailsViewModel.swift; sourceTree = "<group>"; };
+		0361B5B82538E5DA00FFEF05 /* ProductViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewModel.swift; sourceTree = "<group>"; };
 		08EAFF7C89BE3DA80964B8D1 /* Pods_PizzaWorld.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PizzaWorld.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		188CA497A2703D8B7D4DDD38 /* Pods-PizzaWorldTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PizzaWorldTests.release.xcconfig"; path = "Target Support Files/Pods-PizzaWorldTests/Pods-PizzaWorldTests.release.xcconfig"; sourceTree = "<group>"; };
 		61FBF7E9847121E225B4775F /* Pods_PizzaWorldTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PizzaWorldTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -128,6 +158,7 @@
 		0361B4C72537651000FFEF05 /* PizzaWorld */ = {
 			isa = PBXGroup;
 			children = (
+				0361B5602538B7F500FFEF05 /* Model */,
 				0361B52A253777C300FFEF05 /* Core */,
 				0361B51525376B8700FFEF05 /* Extensions */,
 				0361B51425376B8300FFEF05 /* Utility */,
@@ -169,6 +200,7 @@
 		0361B51325376B8000FFEF05 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				0361B5A72538DE8900FFEF05 /* ItemDetails */,
 				0361B51625376BE000FFEF05 /* Home */,
 			);
 			path = Modules;
@@ -177,6 +209,8 @@
 		0361B51425376B8300FFEF05 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				0361B57F2538C69B00FFEF05 /* Coordinator */,
+				0361B56C2538BB2A00FFEF05 /* CustomTabBar */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -185,7 +219,9 @@
 			isa = PBXGroup;
 			children = (
 				0361B52025376DF800FFEF05 /* UICollectionView+Extensions.swift */,
+				0361B55B2538B7B900FFEF05 /* UITableView+Extensions.swift */,
 				0361B5252537704900FFEF05 /* UIView+Extensions.swift */,
+				0361B57A2538C12D00FFEF05 /* UIColor+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -202,10 +238,10 @@
 		0361B51725376BEC00FFEF05 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0361B50B2537670A00FFEF05 /* HomeViewController.xib */,
 				0361B50A2537670A00FFEF05 /* HomeViewController.swift */,
 				0361B54C2537978200FFEF05 /* Observable.swift */,
 				0361B53B253785AD00FFEF05 /* HomeViewModel.swift */,
-				0361B50B2537670A00FFEF05 /* HomeViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -215,6 +251,8 @@
 			children = (
 				0361B51925376C1900FFEF05 /* SliderCell.swift */,
 				0361B51A25376C1900FFEF05 /* SliderCell.xib */,
+				0361B5542538B39C00FFEF05 /* PopularCell.swift */,
+				0361B5552538B39C00FFEF05 /* PopularCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -223,6 +261,7 @@
 			isa = PBXGroup;
 			children = (
 				0361B52B253777C800FFEF05 /* Views */,
+				0361B59A2538CED600FFEF05 /* BaseWireframe.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -241,6 +280,68 @@
 				0361B52D253777DC00FFEF05 /* RatingView.swift */,
 			);
 			path = RatingView;
+			sourceTree = "<group>";
+		};
+		0361B5602538B7F500FFEF05 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0361B5612538B7FD00FFEF05 /* Product.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0361B56C2538BB2A00FFEF05 /* CustomTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				0361B56D2538BB4E00FFEF05 /* CustomTabBarController.swift */,
+				0361B5752538BF4600FFEF05 /* CustomTabBar.swift */,
+			);
+			path = CustomTabBar;
+			sourceTree = "<group>";
+		};
+		0361B57F2538C69B00FFEF05 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				0361B5802538C6A600FFEF05 /* AppCoordinator.swift */,
+				0361B5912538C90400FFEF05 /* Protocols */,
+				0361B5882538C8EF00FFEF05 /* Navigators */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		0361B5882538C8EF00FFEF05 /* Navigators */ = {
+			isa = PBXGroup;
+			children = (
+				0361B5892538C8F900FFEF05 /* MainNavigator.swift */,
+			);
+			path = Navigators;
+			sourceTree = "<group>";
+		};
+		0361B5912538C90400FFEF05 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				0361B5922538C90B00FFEF05 /* Navigator.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		0361B5A72538DE8900FFEF05 /* ItemDetails */ = {
+			isa = PBXGroup;
+			children = (
+				0361B5B72538E5D200FFEF05 /* ViewModel */,
+				0361B5A82538DEB600FFEF05 /* ItemDetailsViewController.swift */,
+				0361B5A92538DEB600FFEF05 /* ItemDetailsViewController.xib */,
+				0361B5B22538DECE00FFEF05 /* ItemDetailsViewModel.swift */,
+			);
+			path = ItemDetails;
+			sourceTree = "<group>";
+		};
+		0361B5B72538E5D200FFEF05 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0361B5B82538E5DA00FFEF05 /* ProductViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		E965B961E7283F9BEB79D3C0 /* Pods */ = {
@@ -376,6 +477,8 @@
 			files = (
 				0361B4D52537651200FFEF05 /* LaunchScreen.storyboard in Resources */,
 				0361B4D22537651200FFEF05 /* Assets.xcassets in Resources */,
+				0361B5AB2538DEB600FFEF05 /* ItemDetailsViewController.xib in Resources */,
+				0361B5572538B39C00FFEF05 /* PopularCell.xib in Resources */,
 				0361B51C25376C1900FFEF05 /* SliderCell.xib in Resources */,
 				0361B50D2537670A00FFEF05 /* HomeViewController.xib in Resources */,
 			);
@@ -506,12 +609,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				0361B54D2537978200FFEF05 /* Observable.swift in Sources */,
+				0361B5932538C90B00FFEF05 /* Navigator.swift in Sources */,
+				0361B5B32538DECE00FFEF05 /* ItemDetailsViewModel.swift in Sources */,
 				0361B52125376DF800FFEF05 /* UICollectionView+Extensions.swift in Sources */,
+				0361B56E2538BB4E00FFEF05 /* CustomTabBarController.swift in Sources */,
+				0361B5762538BF4600FFEF05 /* CustomTabBar.swift in Sources */,
 				0361B4C92537651000FFEF05 /* AppDelegate.swift in Sources */,
 				0361B53C253785AD00FFEF05 /* HomeViewModel.swift in Sources */,
+				0361B5AA2538DEB600FFEF05 /* ItemDetailsViewController.swift in Sources */,
 				0361B5262537704900FFEF05 /* UIView+Extensions.swift in Sources */,
+				0361B55C2538B7B900FFEF05 /* UITableView+Extensions.swift in Sources */,
+				0361B59B2538CED600FFEF05 /* BaseWireframe.swift in Sources */,
 				0361B52E253777DC00FFEF05 /* RatingView.swift in Sources */,
+				0361B5562538B39C00FFEF05 /* PopularCell.swift in Sources */,
+				0361B5B92538E5DA00FFEF05 /* ProductViewModel.swift in Sources */,
 				0361B51B25376C1900FFEF05 /* SliderCell.swift in Sources */,
+				0361B57B2538C12D00FFEF05 /* UIColor+Extensions.swift in Sources */,
+				0361B5812538C6A600FFEF05 /* AppCoordinator.swift in Sources */,
+				0361B5622538B7FD00FFEF05 /* Product.swift in Sources */,
+				0361B58A2538C8F900FFEF05 /* MainNavigator.swift in Sources */,
 				0361B50C2537670A00FFEF05 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

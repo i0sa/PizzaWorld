@@ -28,7 +28,7 @@ class RatingView: UIView {
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         setupUI()
-        configureWithRating(rating: 3)
+//        configureWithRating(rating: 3)
     }
     
     func setupUI(){
@@ -40,22 +40,28 @@ class RatingView: UIView {
         stackView.trailingAnchor.constraint(equalTo: self.trailingAnchor).isActive = true
     }
     
-    func configureWithRating(rating: Int){
-        // Add filled stars
-        if rating > 0 {
-            for _ in 1...rating {
-                let image = generateStarView(.filled)
-                stackView.addArrangedSubview(image)
+    func configureWithRating(rating: Int, style: Style = .full){
+        switch style {
+        case .full:
+            // Add filled stars
+            if rating > 0 {
+                for _ in 1...rating {
+                    let image = generateStarView(.filled)
+                    stackView.addArrangedSubview(image)
+                }
             }
-        }
-        
-        // Add Non-filled stars
-        let nonFilledCount = maximumRating - rating
-        if nonFilledCount > 0 {
-            for _ in 1...nonFilledCount {
-                let image = generateStarView(.nonFilled)
-                stackView.addArrangedSubview(image)
+            
+            // Add Non-filled stars
+            let nonFilledCount = maximumRating - rating
+            if nonFilledCount > 0 {
+                for _ in 1...nonFilledCount {
+                    let image = generateStarView(.nonFilled)
+                    stackView.addArrangedSubview(image)
+                }
             }
+        case .compact:
+            let image = generateStarView(.filled)
+            stackView.addArrangedSubview(image)
         }
     }
     
@@ -69,7 +75,7 @@ class RatingView: UIView {
         }
         let image = UIImageView(image: starImage)
         image.contentMode = .scaleAspectFit
-        image.widthAnchor.constraint(lessThanOrEqualToConstant: 10).isActive = true
+        image.widthAnchor.constraint(equalToConstant: 10).isActive = true
         return image
     }
     
@@ -78,4 +84,8 @@ class RatingView: UIView {
         case nonFilled
     }
 
+    enum Style {
+        case full
+        case compact
+    }
 }

@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="PizzaWorld" customModuleProvider="target">
             <connections>
+                <outlet property="popularTableView" destination="tCK-Vg-l2q" id="cpp-of-8nC"/>
                 <outlet property="sliderCollectionView" destination="pnM-9K-SMQ" id="8cV-YO-6B5"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -42,6 +43,10 @@
                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                     </collectionViewFlowLayout>
                 </collectionView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tCK-Vg-l2q">
+                    <rect key="frame" x="0.0" y="469.5" width="414" height="392.5"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -49,12 +54,16 @@
                 <constraint firstItem="IFr-zA-Pxb" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="32w-yk-dJv"/>
                 <constraint firstItem="IFr-zA-Pxb" firstAttribute="centerX" secondItem="2VS-3d-Ef6" secondAttribute="centerX" id="3dV-up-xRS"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="pnM-9K-SMQ" secondAttribute="trailing" id="7Nv-BK-Nya"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="tCK-Vg-l2q" secondAttribute="trailing" id="7hf-Md-qgn"/>
                 <constraint firstItem="2VS-3d-Ef6" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Evs-3d-pu2"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="tCK-Vg-l2q" secondAttribute="bottom" id="MiP-Uy-nfM"/>
                 <constraint firstItem="2VS-3d-Ef6" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.3" id="RhA-Ir-olh"/>
                 <constraint firstItem="pnM-9K-SMQ" firstAttribute="top" secondItem="IFr-zA-Pxb" secondAttribute="bottom" constant="20" id="UTN-8a-KW5"/>
                 <constraint firstItem="2VS-3d-Ef6" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="WbD-3p-OYH"/>
                 <constraint firstItem="pnM-9K-SMQ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="agd-66-Npo"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="2VS-3d-Ef6" secondAttribute="trailing" id="kbl-hm-k6r"/>
+                <constraint firstItem="tCK-Vg-l2q" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="nYP-YB-trm"/>
+                <constraint firstItem="tCK-Vg-l2q" firstAttribute="top" secondItem="pnM-9K-SMQ" secondAttribute="bottom" id="tux-J3-xKo"/>
             </constraints>
             <point key="canvasLocation" x="113" y="127"/>
         </view>
