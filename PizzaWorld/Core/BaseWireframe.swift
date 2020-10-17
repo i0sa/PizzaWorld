@@ -15,8 +15,8 @@ protocol ViewModel {
 }
 
 class BaseWireframe<T: ViewModel>: UIViewController {
-    let viewModel: T
-    var coordinator: Coordinator
+    var viewModel: T!
+    var coordinator: Coordinator!
 
     lazy var disposeBag: DisposeBag = {
         return DisposeBag()
@@ -33,11 +33,16 @@ class BaseWireframe<T: ViewModel>: UIViewController {
         super.init(nibName: String(describing: type(of: self)), bundle: nil)
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
+
     func bind(viewModel: T){
         fatalError("Please override bind function")
     }
     
     required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        super.init(coder: coder)
     }
 }

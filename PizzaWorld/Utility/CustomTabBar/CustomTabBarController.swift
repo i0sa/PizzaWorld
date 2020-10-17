@@ -84,7 +84,7 @@ class CustomTabBarController: UITabBarController {
             let view = UIViewController()
             return view
         case .Cart:
-            let view = coordinator.Main.viewController(for: .home)
+            let view = coordinator.Cart.viewController(for: .cart)
             view.tabBarItem = tabBarItem(for: item)
             return view
         }

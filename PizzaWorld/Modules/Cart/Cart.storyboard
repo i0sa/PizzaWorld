@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Cart View Controller-->
+        <scene sceneID="Xmu-h6-WlO">
+            <objects>
+                <viewController restorationIdentifier="CartViewController" storyboardIdentifier="CartViewController" id="Z7D-f8-HKz" customClass="CartViewController" customModule="PizzaWorld" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="D2F-sO-2X1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rectangle5" translatesAutoresizingMaskIntoConstraints="NO" id="BWS-sG-gqt">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="220"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="220" id="bFM-uM-mTw"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="nqt-H0-b32">
+                                <rect key="frame" x="148.5" y="94" width="117" height="24"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="basket" translatesAutoresizingMaskIntoConstraints="NO" id="BXp-WP-1HG">
+                                        <rect key="frame" x="0.0" y="0.0" width="15" height="24"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YOUR BAG" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zza-RO-aVW">
+                                        <rect key="frame" x="20" y="0.0" width="97" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rcj-bN-6H9" customClass="PizzaButton" customModule="PizzaWorld" customModuleProvider="target">
+                                <rect key="frame" x="15" y="802" width="384" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="j1R-Ge-cAd"/>
+                                </constraints>
+                                <state key="normal" title="PLACE ORDER"/>
+                                <connections>
+                                    <action selector="didPressOnPlaceOrder:" destination="Z7D-f8-HKz" eventType="touchUpInside" id="HRl-aA-m2M"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kdw-5c-USE">
+                                <rect key="frame" x="18" y="153" width="378" height="649"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="yp8-QM-oKw"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="yp8-QM-oKw" firstAttribute="trailing" secondItem="kdw-5c-USE" secondAttribute="trailing" constant="18" id="4ih-iR-Gc9"/>
+                            <constraint firstItem="BWS-sG-gqt" firstAttribute="top" secondItem="D2F-sO-2X1" secondAttribute="top" id="5uC-Cw-KyI"/>
+                            <constraint firstItem="yp8-QM-oKw" firstAttribute="bottom" secondItem="rcj-bN-6H9" secondAttribute="bottom" constant="10" id="71k-tX-QUU"/>
+                            <constraint firstItem="nqt-H0-b32" firstAttribute="centerX" secondItem="BWS-sG-gqt" secondAttribute="centerX" id="M35-p8-s73"/>
+                            <constraint firstItem="rcj-bN-6H9" firstAttribute="top" secondItem="kdw-5c-USE" secondAttribute="bottom" id="R3j-oN-UxP"/>
+                            <constraint firstItem="yp8-QM-oKw" firstAttribute="trailing" secondItem="BWS-sG-gqt" secondAttribute="trailing" id="TQk-bn-bq5"/>
+                            <constraint firstItem="nqt-H0-b32" firstAttribute="top" secondItem="yp8-QM-oKw" secondAttribute="top" constant="50" id="TlL-3g-N1y"/>
+                            <constraint firstItem="BWS-sG-gqt" firstAttribute="leading" secondItem="yp8-QM-oKw" secondAttribute="leading" id="Wa8-Bh-HU1"/>
+                            <constraint firstItem="kdw-5c-USE" firstAttribute="top" secondItem="nqt-H0-b32" secondAttribute="bottom" constant="35" id="Zlq-Id-WJX"/>
+                            <constraint firstItem="kdw-5c-USE" firstAttribute="leading" secondItem="yp8-QM-oKw" secondAttribute="leading" constant="18" id="aE6-mv-rx8"/>
+                            <constraint firstItem="rcj-bN-6H9" firstAttribute="leading" secondItem="yp8-QM-oKw" secondAttribute="leading" constant="15" id="cRh-CP-4Oj"/>
+                            <constraint firstItem="yp8-QM-oKw" firstAttribute="trailing" secondItem="rcj-bN-6H9" secondAttribute="trailing" constant="15" id="pcN-iX-AuF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="placeOrderButton" destination="rcj-bN-6H9" id="ydw-nc-5nJ"/>
+                        <outlet property="tableView" destination="kdw-5c-USE" id="8TL-SP-5QY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JoK-CI-kbo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="209" y="-11"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="rcj-bN-6H9">
+            <size key="intrinsicContentSize" width="100" height="30"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="basket" width="15" height="17"/>
+        <image name="rectangle5" width="375" height="330"/>
+    </resources>
+</document>

@@ -39,7 +39,8 @@ class HomeViewController: BaseWireframe<HomeViewModel> {
     func setupPopularTableView(){
         popularTableView.rx.setDelegate(self).disposed(by: disposeBag)
         
-        viewModel.popularItems.asObservable()
+        
+        viewModel.popularItems
             .bind(to: popularTableView.rx.items(cellIdentifier: String(describing: PopularCell.self), cellType: PopularCell.self)) { index, model, cell in
                 cell.ratingView.configureWithRating(rating: 5, style: .compact)
         }.disposed(by: disposeBag)
