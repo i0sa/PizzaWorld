@@ -33,6 +33,14 @@ class BaseWireframe<T: ViewModel>: UIViewController {
         super.init(nibName: String(describing: type(of: self)), bundle: nil)
     }
     
+    // Storyboard setup
+    static func createFromStoryboard(storyboard: AppStoryboard, viewModel: T, coordinator: Coordinator) -> Self<T>{
+        let view = Self.instantiate(fromAppStoryboard: storyboard) as Self<T>
+        view.coordinator = coordinator
+        view.viewModel = viewModel
+        return view
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.setNavigationBarHidden(true, animated: animated)

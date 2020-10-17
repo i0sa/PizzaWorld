@@ -26,9 +26,9 @@ class CartNavigator: Navigator {
         switch destination {
         case .cart:
             let viewModel = CartViewModel()
-            let view = CartViewController.instantiate(fromAppStoryboard: storyboard)
-            view.coordinator = coordinator
-            view.viewModel = viewModel
+            let view = CartViewController.createFromStoryboard(storyboard: .Cart, viewModel: viewModel, coordinator: coordinator)
+//            view.coordinator = coordinator
+//            view.viewModel = viewModel
             return view
         }
     }
