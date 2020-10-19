@@ -26,8 +26,7 @@ class SizesSelectorViewModel: ViewModel, SizesSelectorViewModelInputs, SizesSele
         return self
     }
     
-    private var items: BehaviorRelay<[Size]> = .init(value: [.init(name: "Size 1"),
-                                                             .init(name: "Size 2")])
+    private var items: BehaviorRelay<[Size]> = .init(value: [])
 
     private var itemsViewModel: BehaviorRelay<[SizeItemCellViewModel]> = .init(value: [])
     

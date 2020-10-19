@@ -9,12 +9,15 @@ import Foundation
 import UIKit
 import RxCocoa
 import RxSwift
+import Toast_Swift
+import RxReachability
+import Reachability
 
 protocol ViewModel {
     
 }
 
-class BaseWireframe<T: ViewModel>: UIViewController {
+class BaseWireframe<T: BaseViewModel>: UIViewController {
     var viewModel: T!
     var coordinator: Coordinator!
 
@@ -25,6 +28,7 @@ class BaseWireframe<T: ViewModel>: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         bind(viewModel: viewModel)
+        bindStates()
     }
     
     init(viewModel: T, coordinator: Coordinator) {
@@ -52,5 +56,43 @@ class BaseWireframe<T: ViewModel>: UIViewController {
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
+    }
+    
+    func bindStates(){
+        viewModel.displayError.subscribe { [weak self] (text) in
+            self?.displayError(text: text)
+        }.disposed(by: disposeBag)
+        
+        viewModel.isLoading.subscribe { [weak self] (isLoading) in
+            guard let isLoading = isLoading.element else { return }
+            if(isLoading){
+                self?.view.makeToastActivity(.center)
+            } else {
+                self?.view.hideToastActivity()
+            }
+        }.disposed(by: disposeBag)
+
+        
+        // reachability state binding
+        Reachability.rx.isReachable.subscribe(onNext: { isReachable in
+            if(isReachable == false){
+                self.displayError(text: "No network found...")
+            }
+        }).disposed(by: disposeBag)
+    }
+}
+
+extension BaseWireframe {
+    func displayError(text: String){
+        let alert = UIAlertController(title: text, message: nil, preferredStyle: .alert)
+        let cancelButton = UIAlertAction.init(title: "Cancel", style: .destructive, handler: nil)
+        alert.addAction(cancelButton)
+        self.present(alert, animated: true, completion: nil)
+    }
+}
+
+extension BaseWireframe where T: BaseViewModel {
+    func bindLoadings(){
+        print("Base view model is implemneted here..")
     }
 }

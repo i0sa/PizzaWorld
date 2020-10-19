@@ -13,7 +13,7 @@ class QuantityView: NibLoadingView {
     let disposeBag = DisposeBag()
     
     @IBOutlet weak var valueLabel: UILabel!
-    var currentValue: BehaviorRelay<Int> = .init(value: 0)
+    private var currentValue: BehaviorRelay<Int> = .init(value: 0)
     
     lazy var currentValueObservable: Observable<Int> = {
         return currentValue.asObservable()
@@ -42,6 +42,10 @@ class QuantityView: NibLoadingView {
     @IBAction func didPresMinus(_ sender: UIButton) {
         guard currentValue.value > 0 else { return }
         currentValue.accept(currentValue.value - 1)
+    }
+    
+    public var value: Int {
+        return currentValue.value
     }
 }
 

@@ -8,6 +8,7 @@
 import UIKit
 import RxCocoa
 import RxSwift
+import Alamofire
 
 class HomeViewController: BaseWireframe<HomeViewModel> {
     @IBOutlet weak var sliderCollectionView: UICollectionView!
@@ -19,6 +20,7 @@ class HomeViewController: BaseWireframe<HomeViewModel> {
         registerCells()
         setupPopularTableView()
         viewModel.viewDidLoad()
+    
     }
     
     override func bind(viewModel: HomeViewModel) {
@@ -34,6 +36,7 @@ class HomeViewController: BaseWireframe<HomeViewModel> {
             guard let self = self, let product = product.element else { return }
             self.coordinator.Main.navigate(to: .itemDetails(product: product))
         }.disposed(by: disposeBag)
+        
     }
     
     func setupPopularTableView(){
@@ -67,6 +70,7 @@ class HomeViewController: BaseWireframe<HomeViewModel> {
 extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeue(indexPath: indexPath) as SliderCell
+        cell.configure(viewModel.sliderViewModelAtIndexPath(indexPath))
         return cell
     }
     

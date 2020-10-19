@@ -12,6 +12,7 @@ import RxCocoa
 protocol HomeViewModelOutput {
     var slideToItem: PublishSubject<Int> { get set }
     var navigateToItemDetails: PublishSubject<Product> { get set }
+    func sliderViewModelAtIndexPath(_ indexPath: IndexPath) -> SliderViewModel
 }
 
 protocol HomeViewModelInput {
@@ -20,18 +21,19 @@ protocol HomeViewModelInput {
     func didSelectItemAtIndexPath(_ indexPath: IndexPath)
 }
 
-class HomeViewModel: ViewModel, HomeViewModelOutput & HomeViewModelInput {
+class HomeViewModel: BaseViewModel, HomeViewModelOutput & HomeViewModelInput {
     private var sliderTimer: Timer?
-    var slides: BehaviorRelay<[Int]> = .init(value: [1])
-    var popularItems: BehaviorRelay<[Product]> = .init(value: [
-        .init(title: "Pizza", rating: 3, price: 10),
-        .init(title: "Pizza Burger", rating: 3, price: 10),
-        .init(title: "Pizza Shrimp", rating: 3, price: 10),
-        .init(title: "Pizza Beef", rating: 3, price: 10),
-        .init(title: "Pizza BBQ", rating: 3, price: 10)
-    ])
-    private var currentSlide = 0
+    var slides: BehaviorRelay<[SliderViewModel]> = .init(value: [])
+    let disposeBag = DisposeBag()
     
+    var popularItems: BehaviorRelay<[ProductViewModel]> = .init(value: [])
+    
+    private var currentSlide = 0
+    let homeRepository: HomeRepository
+    
+    init(homeRepository: HomeRepository) {
+        self.homeRepository = homeRepository
+    }
     
     // outputs
     var slideToItem: PublishSubject<Int> = .init()
@@ -40,9 +42,12 @@ class HomeViewModel: ViewModel, HomeViewModelOutput & HomeViewModelInput {
     // Inputs
     func viewDidLoad(){
         sliderTimer = Timer.scheduledTimer(timeInterval: 5, target: self, selector: #selector(scrollToNextItem), userInfo: nil, repeats: true)
+        fetchSliderData()
+        fetchPopularData()
     }
     
     @objc func scrollToNextItem(){
+        guard slides.value.count > 0 else { return }
         let nextSlide = currentSlide + 1
         currentSlide = nextSlide % slides.value.count
         slideToItem.onNext(currentSlide)
@@ -50,12 +55,49 @@ class HomeViewModel: ViewModel, HomeViewModelOutput & HomeViewModelInput {
     
     func didSelectItemAtIndexPath(_ indexPath: IndexPath) {
         let model = popularItems.value[indexPath.row]
-        navigateToItemDetails.onNext(model)
+//        navigateToItemDetails.onNext(model)
     }
     
     //MARK: Public Variables
     var numberOfItems: Int {
         return slides.value.count
+    }
+    
+    
+    // Network Calls
+    private func fetchSliderData(){
+        isLoading.onNext(true)
+        homeRepository.fetchSliderData().subscribe { [weak self] (items) in
+            self?.isLoading.onNext(false)
+//            self?.displayError.onNext("No network connection, please try again.")
+            self?.slides.accept(items.map(SliderViewModel.init))
+        } onError: { (error) in
+            self.isLoading.onNext(false)
+            print("I got error.. \(error)")
+        } onCompleted: {
+            self.isLoading.onNext(false)
+            //
+        }.disposed(by: disposeBag)
+
+    }
+    
+    private func fetchPopularData(){
+        isLoading.onNext(true)
+        homeRepository.fetchPopularData().subscribe { (items) in
+            self.isLoading.onNext(false)
+            let slidesModels = items
+            self.popularItems.accept(slidesModels.map(ProductViewModel.init))
+        } onError: { (error) in
+            self.isLoading.onNext(false)
+            print("I got error.. \(error)")
+        } onCompleted: {
+            self.isLoading.onNext(false)
+            //
+        }.disposed(by: disposeBag)
+    }
+    
+    func sliderViewModelAtIndexPath(_ indexPath: IndexPath) -> SliderViewModel{
+        return slides.value[indexPath.row]
     }
     
 }

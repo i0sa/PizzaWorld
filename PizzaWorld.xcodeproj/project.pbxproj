@@ -52,6 +52,16 @@
 		0368C5EC253B829A00EFFD39 /* CartItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0368C5EB253B829A00EFFD39 /* CartItemViewModel.swift */; };
 		0368C5F2253B83BA00EFFD39 /* CartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0368C5F1253B83BA00EFFD39 /* CartManager.swift */; };
 		0368C5F7253B8A2900EFFD39 /* CartHeaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0368C5F6253B8A2900EFFD39 /* CartHeaderViewModel.swift */; };
+		0368C731253E049D00EFFD39 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0368C730253E049D00EFFD39 /* MainRouter.swift */; };
+		0368C739253E067600EFFD39 /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0368C738253E067600EFFD39 /* NetworkConstants.swift */; };
+		0368C744253E0BA700EFFD39 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0368C743253E0BA700EFFD39 /* NetworkClient.swift */; };
+		0368C74A253E0C0A00EFFD39 /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0368C749253E0C0A00EFFD39 /* APIRouter.swift */; };
+		0368C74F253E0CE000EFFD39 /* Slider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0368C74E253E0CE000EFFD39 /* Slider.swift */; };
+		0368C755253E103C00EFFD39 /* ResponseObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0368C754253E103C00EFFD39 /* ResponseObject.swift */; };
+		0368C75A253E124000EFFD39 /* SliderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0368C759253E124000EFFD39 /* SliderViewModel.swift */; };
+		0368C75F253E147000EFFD39 /* FeedRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0368C75E253E147000EFFD39 /* FeedRouter.swift */; };
+		0368C767253E25B000EFFD39 /* HomeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0368C766253E25B000EFFD39 /* HomeRepository.swift */; };
+		0368C76F253E2B4A00EFFD39 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0368C76E253E2B4A00EFFD39 /* BaseViewModel.swift */; };
 		03DD522E253B599700D2ADB7 /* SizesSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DD522D253B599700D2ADB7 /* SizesSelectorView.swift */; };
 		03DD5236253B59BC00D2ADB7 /* SizesSelectorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03DD5235253B59BC00D2ADB7 /* SizesSelectorView.xib */; };
 		03DD523B253B5A3900D2ADB7 /* NibLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DD523A253B5A3900D2ADB7 /* NibLoadingView.swift */; };
@@ -140,6 +150,16 @@
 		0368C5EB253B829A00EFFD39 /* CartItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartItemViewModel.swift; sourceTree = "<group>"; };
 		0368C5F1253B83BA00EFFD39 /* CartManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartManager.swift; sourceTree = "<group>"; };
 		0368C5F6253B8A2900EFFD39 /* CartHeaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartHeaderViewModel.swift; sourceTree = "<group>"; };
+		0368C730253E049D00EFFD39 /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
+		0368C738253E067600EFFD39 /* NetworkConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
+		0368C743253E0BA700EFFD39 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		0368C749253E0C0A00EFFD39 /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
+		0368C74E253E0CE000EFFD39 /* Slider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slider.swift; sourceTree = "<group>"; };
+		0368C754253E103C00EFFD39 /* ResponseObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseObject.swift; sourceTree = "<group>"; };
+		0368C759253E124000EFFD39 /* SliderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderViewModel.swift; sourceTree = "<group>"; };
+		0368C75E253E147000EFFD39 /* FeedRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedRouter.swift; sourceTree = "<group>"; };
+		0368C766253E25B000EFFD39 /* HomeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRepository.swift; sourceTree = "<group>"; };
+		0368C76E253E2B4A00EFFD39 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		03DD522D253B599700D2ADB7 /* SizesSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizesSelectorView.swift; sourceTree = "<group>"; };
 		03DD5235253B59BC00D2ADB7 /* SizesSelectorView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SizesSelectorView.xib; sourceTree = "<group>"; };
 		03DD523A253B5A3900D2ADB7 /* NibLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadingView.swift; sourceTree = "<group>"; };
@@ -237,7 +257,7 @@
 		0361B4C72537651000FFEF05 /* PizzaWorld */ = {
 			isa = PBXGroup;
 			children = (
-				0361B5602538B7F500FFEF05 /* Model */,
+				0368C763253E256D00EFFD39 /* Domain */,
 				0361B52A253777C300FFEF05 /* Core */,
 				0361B51525376B8700FFEF05 /* Extensions */,
 				0361B51425376B8300FFEF05 /* Utility */,
@@ -289,6 +309,7 @@
 		0361B51425376B8300FFEF05 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				0368C72C253E048A00EFFD39 /* Network */,
 				0368C5F0253B83A900EFFD39 /* CartManager */,
 				0361B57F2538C69B00FFEF05 /* Coordinator */,
 				0361B56C2538BB2A00FFEF05 /* CustomTabBar */,
@@ -325,6 +346,7 @@
 				0361B50B2537670A00FFEF05 /* HomeViewController.xib */,
 				0361B50A2537670A00FFEF05 /* HomeViewController.swift */,
 				0361B53B253785AD00FFEF05 /* HomeViewModel.swift */,
+				0368C759253E124000EFFD39 /* SliderViewModel.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -345,6 +367,7 @@
 			children = (
 				0361B52B253777C800FFEF05 /* Views */,
 				0361B59A2538CED600FFEF05 /* BaseWireframe.swift */,
+				0368C76E253E2B4A00EFFD39 /* BaseViewModel.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -373,9 +396,11 @@
 		0361B5602538B7F500FFEF05 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0368C753253E102B00EFFD39 /* NetworkModels */,
 				0361B5612538B7FD00FFEF05 /* Product.swift */,
 				0368C5E6253B81F300EFFD39 /* CartItem.swift */,
 				03DD5244253B5D0C00D2ADB7 /* Size.swift */,
+				0368C74E253E0CE000EFFD39 /* Slider.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -481,6 +506,59 @@
 				0368C5F1253B83BA00EFFD39 /* CartManager.swift */,
 			);
 			path = CartManager;
+			sourceTree = "<group>";
+		};
+		0368C72C253E048A00EFFD39 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				0368C748253E0C0000EFFD39 /* Protocols */,
+				0368C730253E049D00EFFD39 /* MainRouter.swift */,
+				0368C75E253E147000EFFD39 /* FeedRouter.swift */,
+				0368C738253E067600EFFD39 /* NetworkConstants.swift */,
+				0368C743253E0BA700EFFD39 /* NetworkClient.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		0368C748253E0C0000EFFD39 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				0368C749253E0C0A00EFFD39 /* APIRouter.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		0368C753253E102B00EFFD39 /* NetworkModels */ = {
+			isa = PBXGroup;
+			children = (
+				0368C754253E103C00EFFD39 /* ResponseObject.swift */,
+			);
+			path = NetworkModels;
+			sourceTree = "<group>";
+		};
+		0368C763253E256D00EFFD39 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				0368C764253E257300EFFD39 /* Repository */,
+				0361B5602538B7F500FFEF05 /* Model */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		0368C764253E257300EFFD39 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				0368C765253E259D00EFFD39 /* HomeRepository */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		0368C765253E259D00EFFD39 /* HomeRepository */ = {
+			isa = PBXGroup;
+			children = (
+				0368C766253E25B000EFFD39 /* HomeRepository.swift */,
+			);
+			path = HomeRepository;
 			sourceTree = "<group>";
 		};
 		03DD522C253B58C000D2ADB7 /* SizesSelectorView */ = {
@@ -830,26 +908,36 @@
 				034047F6253B6FD90032A79F /* PizzaButton.swift in Sources */,
 				0368C5F7253B8A2900EFFD39 /* CartHeaderViewModel.swift in Sources */,
 				03404815253B74870032A79F /* AppStoryboard.swift in Sources */,
+				0368C75A253E124000EFFD39 /* SliderViewModel.swift in Sources */,
 				0368C5F2253B83BA00EFFD39 /* CartManager.swift in Sources */,
 				0361B59B2538CED600FFEF05 /* BaseWireframe.swift in Sources */,
+				0368C74A253E0C0A00EFFD39 /* APIRouter.swift in Sources */,
 				0361B52E253777DC00FFEF05 /* RatingView.swift in Sources */,
 				0368C5CA253B7D9E00EFFD39 /* CartHeaderCell.swift in Sources */,
+				0368C767253E25B000EFFD39 /* HomeRepository.swift in Sources */,
 				03DD5240253B5C6400D2ADB7 /* SizesSelectorViewModel.swift in Sources */,
+				0368C731253E049D00EFFD39 /* MainRouter.swift in Sources */,
 				0361B5562538B39C00FFEF05 /* PopularCell.swift in Sources */,
+				0368C74F253E0CE000EFFD39 /* Slider.swift in Sources */,
 				0340480B253B73DD0032A79F /* CartNavigator.swift in Sources */,
 				03DD526C253B69F700D2ADB7 /* PIZZATextView.swift in Sources */,
 				03DD524C253B5EBE00D2ADB7 /* SizeItemCell.swift in Sources */,
+				0368C76F253E2B4A00EFFD39 /* BaseViewModel.swift in Sources */,
+				0368C75F253E147000EFFD39 /* FeedRouter.swift in Sources */,
 				0361B5B92538E5DA00FFEF05 /* ProductViewModel.swift in Sources */,
 				03DD5245253B5D0C00D2ADB7 /* Size.swift in Sources */,
 				0361B51B25376C1900FFEF05 /* SliderCell.swift in Sources */,
 				0361B57B2538C12D00FFEF05 /* UIColor+Extensions.swift in Sources */,
 				0361B5812538C6A600FFEF05 /* AppCoordinator.swift in Sources */,
 				0361B5622538B7FD00FFEF05 /* Product.swift in Sources */,
+				0368C755253E103C00EFFD39 /* ResponseObject.swift in Sources */,
 				03DD5282253B6B1300D2ADB7 /* PizzaOptionsView.swift in Sources */,
 				03DD5255253B635D00D2ADB7 /* SizeItemCellViewModel.swift in Sources */,
 				03404806253B73A80032A79F /* CartViewController.swift in Sources */,
+				0368C739253E067600EFFD39 /* NetworkConstants.swift in Sources */,
 				0361B58A2538C8F900FFEF05 /* MainNavigator.swift in Sources */,
 				03DD522E253B599700D2ADB7 /* SizesSelectorView.swift in Sources */,
+				0368C744253E0BA700EFFD39 /* NetworkClient.swift in Sources */,
 				0361B50C2537670A00FFEF05 /* HomeViewController.swift in Sources */,
 				0368C5E7253B81F300EFFD39 /* CartItem.swift in Sources */,
 				0368C5DB253B7DE800EFFD39 /* CartTotalFooterCell.swift in Sources */,

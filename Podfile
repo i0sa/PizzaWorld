@@ -10,7 +10,11 @@ target 'PizzaWorld' do
   pod 'RxSwift'
   pod 'RxCocoa'
   pod 'UITextView+Placeholder'
+  pod 'Alamofire'
+  pod 'Toast-Swift'
+  pod 'RxReachability'
 
+  
   target 'PizzaWorldTests' do
     inherit! :search_paths
     # Pods for testing

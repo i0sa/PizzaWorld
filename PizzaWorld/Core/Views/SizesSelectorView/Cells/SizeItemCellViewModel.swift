@@ -12,6 +12,6 @@ struct SizeItemCellViewModel {
     var topString: String
     
     init(size: Size, showPrice: Bool) {
-        self.topString = size.name
+        self.topString = size.size
     }
 }

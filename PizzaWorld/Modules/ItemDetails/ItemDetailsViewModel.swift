@@ -15,10 +15,10 @@ protocol ItemDetailsViewModelOutput {
 
 protocol ItemDetailsViewModelInput {
     func viewDidLoad()
-    func didPressAddToCart()
+    func didPressAddToCart(quantity: Int)
 }
 
-class ItemDetailsViewModel: ViewModel, ItemDetailsViewModelOutput & ItemDetailsViewModelInput {
+class ItemDetailsViewModel: BaseViewModel, ItemDetailsViewModelOutput & ItemDetailsViewModelInput {
     let product: Product
     
     init(product: Product) {
@@ -34,7 +34,7 @@ class ItemDetailsViewModel: ViewModel, ItemDetailsViewModelOutput & ItemDetailsV
         displayMainData.onNext(productViewModel)
     }
     
-    func didPressAddToCart(){
-        CartManager.shared.add(product: product)
+    func didPressAddToCart(quantity: Int){
+        CartManager.shared.add(product: product, quantity: quantity)
     }
 }

@@ -40,7 +40,8 @@ class ItemDetailsViewController: BaseWireframe<ItemDetailsViewModel> {
     }
     
     @IBAction func didPressAddToCart(_ sender: PizzaButton) {
-        viewModel.didPressAddToCart()
+        let quantity = pizzaOptionsView.quantityView.value
+        viewModel.didPressAddToCart(quantity: quantity)
     }
     
 }

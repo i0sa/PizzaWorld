@@ -25,13 +25,6 @@ class CartViewController: BaseWireframe<CartViewModel> {
         viewModel.output.cartItemsObservable.bind(to: tableView.rx.items(cellIdentifier: String(describing: CartItemCell.self), cellType: CartItemCell.self)) { index, model, cell in
             cell.configure(with: model)
         }.disposed(by: disposeBag)
-        
-        viewModel.output.itemHeaderDidChangeObservable.subscribe { [weak self] (viewModel) in
-            guard let self = self, let viewModel = viewModel.element else { return }
-            self.tableView.reloadData()
-        }.disposed(by: disposeBag)
-
-        
     }
     
     func registerCells(){
@@ -41,7 +34,10 @@ class CartViewController: BaseWireframe<CartViewModel> {
     }
     
     override func bind(viewModel: CartViewModel) {
-        
+        viewModel.output.itemHeaderDidChangeObservable.subscribe { [weak self] (viewModel) in
+            guard let self = self, let viewModel = viewModel.element else { return }
+            self.tableView.reloadData()
+        }.disposed(by: disposeBag)
     }
 
     @IBAction func didPressOnPlaceOrder(_ sender: PizzaButton) {
@@ -56,6 +52,15 @@ extension CartViewController: UITableViewDelegate {
         }
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let deleteAction = UIContextualAction.init(style: .destructive, title: "Delete", handler: { [weak self] (_, _, completion) in
+            self?.viewModel.didDeleteItem(at: indexPath)
+            completion(true)
+        })
+        return UISwipeActionsConfiguration(actions: [deleteAction])
+    }
+    
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 60

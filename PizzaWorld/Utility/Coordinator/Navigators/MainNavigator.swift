@@ -23,7 +23,8 @@ class MainNavigator: Navigator {
     func viewController(for destination: Destination) -> UIViewController {
         switch destination {
         case .home:
-            let viewModel = HomeViewModel()
+            let homeRepo = HomeRepositoryImpl()
+            let viewModel = HomeViewModel(homeRepository: homeRepo)
             let view = HomeViewController(viewModel: viewModel, coordinator: coordinator)
             return view
         case .itemDetails(let product):

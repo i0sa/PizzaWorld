@@ -9,6 +9,7 @@ import Foundation
 
 struct CartItem {
     var product: Product
-    var notes: String?
     
+    var notes: String?
+    var quantity: Int = 1
 }

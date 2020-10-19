@@ -177,6 +177,14 @@
                 <constraint firstAttribute="bottom" secondItem="qnj-YR-LHH" secondAttribute="bottom" constant="50" id="wLy-Im-t8R"/>
             </constraints>
             <size key="customSize" width="482" height="515"/>
+            <connections>
+                <outlet property="categoryLabel" destination="mb4-aq-7SX" id="Su2-2w-JlY"/>
+                <outlet property="cookTimeLabel" destination="lzc-Mm-cg9" id="IbC-4E-TYe"/>
+                <outlet property="orderNowButton" destination="ZsF-Tg-dEb" id="YBF-Hh-h4P"/>
+                <outlet property="ratingView" destination="BvE-02-Dlj" id="A4w-Ta-CQ4"/>
+                <outlet property="sliderImage" destination="ebj-tZ-ahp" id="JhT-0k-uNP"/>
+                <outlet property="titleLabel" destination="Jzj-Kb-nfy" id="2eK-pl-Hou"/>
+            </connections>
             <point key="canvasLocation" x="450.72463768115944" y="226.67410714285714"/>
         </collectionViewCell>
     </objects>
