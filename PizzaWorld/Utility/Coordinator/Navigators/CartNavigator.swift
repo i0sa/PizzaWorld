@@ -22,7 +22,7 @@ class CartNavigator: Navigator {
         self.coordinator = coordinator
     }
 
-    func viewController(for destination: Destination) -> UIViewController {
+    func viewController(for destination: Destination, coordinator: Coordinator) -> UIViewController {
         switch destination {
         case .cart:
             let viewModel = CartViewModel()

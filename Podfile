@@ -13,7 +13,7 @@ target 'PizzaWorld' do
   pod 'Alamofire'
   pod 'Toast-Swift'
   pod 'RxReachability'
-
+  pod 'Kingfisher'
   
   target 'PizzaWorldTests' do
     inherit! :search_paths

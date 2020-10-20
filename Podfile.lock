@@ -1,5 +1,8 @@
 PODS:
   - Alamofire (5.2.2)
+  - Kingfisher (5.15.3):
+    - Kingfisher/Core (= 5.15.3)
+  - Kingfisher/Core (5.15.3)
   - ReachabilitySwift (4.3.1)
   - RxCocoa (5.1.1):
     - RxRelay (~> 5)
@@ -16,6 +19,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
+  - Kingfisher
   - RxCocoa
   - RxReachability
   - RxSwift
@@ -25,6 +29,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - Alamofire
+    - Kingfisher
     - ReachabilitySwift
     - RxCocoa
     - RxReachability
@@ -35,6 +40,7 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: 814429acc853c6c54ff123fc3d2ef66803823ce0
+  Kingfisher: 2fef2f4d9e809285aff7f6195b5290520904f3fa
   ReachabilitySwift: 4032e2f59586e11e3b0ebe15b167abdd587a388b
   RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
   RxReachability: 21d3e96f39bc166a21c357e923f47dec148ca97b
@@ -43,6 +49,6 @@ SPEC CHECKSUMS:
   Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
   "UITextView+Placeholder": d7b0c400921f66523f3a85d74f774512e14f6502
 
-PODFILE CHECKSUM: 2d3477b5c2fae3e02436ee246eca8808a13d39eb
+PODFILE CHECKSUM: 5dc23a233f87e7faa3018eb608e2c3fb7a76c355
 
 COCOAPODS: 1.9.3

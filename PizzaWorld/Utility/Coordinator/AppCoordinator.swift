@@ -11,13 +11,17 @@ import UIKit
 protocol Coordinator {
     var Main: MainNavigator { get }
     var Cart: CartNavigator { get }
+    var Pizza: PizzaNavigator { get }
     var navigationController: UINavigationController? { get }
+    var tabBar: CustomTabBarController { get }
+    func dismiss()
+    var subCoordinator: Coordinator { get }
 }
 
 class AppCoordinator: Coordinator {
     let window: UIWindow
     
-    private lazy var tabBar: CustomTabBarController = {
+    lazy var tabBar: CustomTabBarController = {
         return CustomTabBarController(coordinator: self)
     }()
     
@@ -29,15 +33,33 @@ class AppCoordinator: Coordinator {
         return .init(coordinator: self)
     }()
     
-    var navigationController: UINavigationController? {
-        if let navigationController = tabBar.selectedViewController as? UINavigationController {
-            return navigationController
-        }
-        return nil
-    }
+    lazy var Pizza: PizzaNavigator = {
+        return .init(coordinator: self)
+    }()
     
-    init(window: UIWindow = UIWindow()) {
+    lazy var subCoordinator: Coordinator = {
+        return AppCoordinator(window: window, isSub: true)
+    }()
+    
+    lazy var subNavigationController = {
+        return UINavigationController()
+    }()
+
+    var navigationController: UINavigationController? {
+        if(isSub){
+            return subNavigationController
+        } else {
+            if let navigationController = tabBar.selectedViewController as? UINavigationController {
+                return navigationController
+            }
+            return nil
+        }
+    }
+    var isSub: Bool
+    
+    init(window: UIWindow = UIWindow(), isSub: Bool = false) {
         self.window = window
+        self.isSub = isSub
     }
     
     func start(){
@@ -45,7 +67,16 @@ class AppCoordinator: Coordinator {
         window.makeKeyAndVisible()
     }
     
+    func dismiss() {
+        self.navigationController?.popViewController(animated: true)
+        self.navigationController?.dismiss(animated: true, completion: nil)
+    }
+    
     var rootViewController: UIViewController {
+        // debug
+//        #if DEBUG
+//        return Pizza.viewController(for: .pizzaMaker(options: .init(name: "Osama")), coordinator: self)
+//        #endif
         return tabBar
     }
 }

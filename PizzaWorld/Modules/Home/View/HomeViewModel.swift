@@ -27,12 +27,13 @@ class HomeViewModel: BaseViewModel, HomeViewModelOutput & HomeViewModelInput {
     let disposeBag = DisposeBag()
     
     var popularItems: BehaviorRelay<[ProductViewModel]> = .init(value: [])
+    private var popularItemsList: [Product] = []
     
     private var currentSlide = 0
-    let homeRepository: HomeRepository
+    let homeUseCase: HomeUseCase
     
-    init(homeRepository: HomeRepository) {
-        self.homeRepository = homeRepository
+    init(homeUseCase: HomeUseCase) {
+        self.homeUseCase = homeUseCase
     }
     
     // outputs
@@ -54,8 +55,8 @@ class HomeViewModel: BaseViewModel, HomeViewModelOutput & HomeViewModelInput {
     }
     
     func didSelectItemAtIndexPath(_ indexPath: IndexPath) {
-        let model = popularItems.value[indexPath.row]
-//        navigateToItemDetails.onNext(model)
+        let model = popularItemsList[indexPath.row]
+        navigateToItemDetails.onNext(model)
     }
     
     //MARK: Public Variables
@@ -67,7 +68,7 @@ class HomeViewModel: BaseViewModel, HomeViewModelOutput & HomeViewModelInput {
     // Network Calls
     private func fetchSliderData(){
         isLoading.onNext(true)
-        homeRepository.fetchSliderData().subscribe { [weak self] (items) in
+        homeUseCase.executeSliderFetch().subscribe { [weak self] (items) in
             self?.isLoading.onNext(false)
 //            self?.displayError.onNext("No network connection, please try again.")
             self?.slides.accept(items.map(SliderViewModel.init))
@@ -83,8 +84,9 @@ class HomeViewModel: BaseViewModel, HomeViewModelOutput & HomeViewModelInput {
     
     private func fetchPopularData(){
         isLoading.onNext(true)
-        homeRepository.fetchPopularData().subscribe { (items) in
+        homeUseCase.executePopularFetch().subscribe { (items) in
             self.isLoading.onNext(false)
+            self.popularItemsList = items
             let slidesModels = items
             self.popularItems.accept(slidesModels.map(ProductViewModel.init))
         } onError: { (error) in

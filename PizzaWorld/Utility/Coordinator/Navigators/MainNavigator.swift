@@ -7,7 +7,6 @@
 
 import Foundation
 import UIKit
-
 class MainNavigator: Navigator {
     var coordinator: Coordinator
     
@@ -20,11 +19,12 @@ class MainNavigator: Navigator {
         self.coordinator = coordinator
     }
 
-    func viewController(for destination: Destination) -> UIViewController {
+    func viewController(for destination: Destination, coordinator: Coordinator) -> UIViewController {
         switch destination {
         case .home:
             let homeRepo = HomeRepositoryImpl()
-            let viewModel = HomeViewModel(homeRepository: homeRepo)
+            let homeUseCase = HomeUseCase(homeRepository: homeRepo)
+            let viewModel = HomeViewModel(homeUseCase: homeUseCase)
             let view = HomeViewController(viewModel: viewModel, coordinator: coordinator)
             return view
         case .itemDetails(let product):

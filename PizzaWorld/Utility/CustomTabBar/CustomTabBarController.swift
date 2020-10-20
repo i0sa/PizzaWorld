@@ -70,6 +70,7 @@ class CustomTabBarController: UITabBarController {
     
     @objc func didPressMiddleButton(){
         print("Pressed Middle Button")
+//        coordinator.Pizza.navigate(to: .pizzaMakerOptions, with: .presentWithNavigation)
         // add pizza generator impl
         selectedIndex = TabBarItems.PizzaMaker.rawValue
     }
@@ -77,14 +78,15 @@ class CustomTabBarController: UITabBarController {
     func viewControllerForTabBarItem(_ item: TabBarItems) -> UIViewController{
         switch item {
         case .Home:
-            let view = coordinator.Main.viewController(for: .home)
+            let view = coordinator.Main.viewController(for: .home, coordinator: coordinator)
             view.tabBarItem = tabBarItem(for: item)
             return view
         case .PizzaMaker:
-            let view = UIViewController()
+            let view = coordinator.Pizza.viewController(for: .pizzaMakerOptions, coordinator: coordinator)
+//            let view = UIViewController()
             return view
         case .Cart:
-            let view = coordinator.Cart.viewController(for: .cart)
+            let view = coordinator.Cart.viewController(for: .cart, coordinator: coordinator)
             view.tabBarItem = tabBarItem(for: item)
             return view
         }
